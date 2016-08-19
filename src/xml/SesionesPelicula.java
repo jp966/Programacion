@@ -19,6 +19,23 @@ public class SesionesPelicula {
         this.pelicula=pelicula;
         this.sesionesStrPelicula=sesionesStrPelicula;
     }
+
+    public Pelicula getPelicula() {
+        return pelicula;
+    }
+
+    public Vector getSesionesStrPelicula() {
+        return sesionesStrPelicula;
+    }
+
+    public void setPelicula(Pelicula pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    public void setSesionesStrPelicula(Vector sesionesStrPelicula) {
+        this.sesionesStrPelicula = sesionesStrPelicula;
+    }
+    
     
     public static void main(String[] args) {
     }

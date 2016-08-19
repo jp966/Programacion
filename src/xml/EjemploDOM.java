@@ -30,7 +30,8 @@ public class EjemploDOM {
             Document doc = parser.parse(new File("C:\\Users\\juan pablo\\Desktop\\ejercicio2.xml") );
             EjemploDOM.tratarNodo(doc);
             NodeList peliNodes = doc.getElementsByTagName("Pelicula");
-            //System.out.println(peliNodes.item(1).getAttributes());
+            
+            
         
     }
 
@@ -58,7 +59,7 @@ public class EjemploDOM {
             case Node.TEXT_NODE:
                 String texto = nodo.getNodeValue().trim();
                 if (!texto.equals("")) {
-                    //System.out.println(ind + texto);
+                    System.out.println(texto);
                 }
                 break;
             case Node.CDATA_SECTION_NODE:
