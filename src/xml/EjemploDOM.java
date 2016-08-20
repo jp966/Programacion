@@ -51,6 +51,9 @@ public class EjemploDOM {
                 }
                 System.out.println(">");
                 NodeList hijos = nodo.getChildNodes();
+                for (int i = 0; i < hijos.getLength(); i++) {
+                 tratarNodo(hijos.item(i)); 
+                }
                 // tratar los hijos recursivamente
                 break;
             case Node.ATTRIBUTE_NODE:
